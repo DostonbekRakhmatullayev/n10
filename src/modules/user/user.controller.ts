@@ -19,6 +19,7 @@ import { JwtAuthGuards } from '../guards/jwt-auth.guard';
 export class UserController {
   constructor(private readonly userService: UserService) {}
   // user create
+  // user post
   @ApiOperation({ summary: 'Foydalanuvchi' })
   @Post()
   create(@Body() createUserDto) {
